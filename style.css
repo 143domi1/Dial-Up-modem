@@ -2,3 +2,28 @@ html {
   height: 100%;
   width: 100%;
 }
+
+/* Add this CSS to your style.css to style the popup */
+
+#popup {
+  position: fixed; /* Fixed position */
+  left: 50%; /* Center the popup */
+  top: 50%; /* Center the popup */
+  transform: translate(-50%, -50%); /* Compensate for the dimensions of the popup */
+  width: 300px; /* Width of the popup */
+  padding: 20px; /* Padding inside the popup */
+  background: #fff; /* Background color of the popup */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  z-index: 10; /* Make sure it appears above other elements */
+}
+
+/* Add this CSS to dim background when the popup is visible */
+body.dimmed #popup {
+  display: block; /* Ensure the popup is displayed */
+}
+
+body.dimmed {
+  background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+}
+
+ 

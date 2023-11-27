@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Search Engine</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .search-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .search-box input[type="text"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 50%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .search-box input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .search-box input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="search-box">
+  <h1>Simple Search Engine</h1>
+  <form action="https://www.google.com/search" method="GET">
+    <input type="text" name="q" placeholder="Type here to search..." required>
+    <input type="submit" value="Search">
+  </form>
+</div>
+ 
+</body>
+</html>
